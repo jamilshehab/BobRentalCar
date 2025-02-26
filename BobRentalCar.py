@@ -4,4 +4,11 @@ class Vichelle:
         self.model=model
         self.year=year
         self.rental_price_per_day=rental_price_per_day
-    
+
+ 
+   
+class Car(Vichelle):
+    def calculate_rental_cars(self,days):
+        return self.rental_price_per_day + days
+
+

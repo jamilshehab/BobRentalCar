@@ -4,7 +4,7 @@ class Vichelle:
         self.brand=brand
         self.model=model
         self.year=year
-        self.rental_price_per_day=rental_price_per_day
+        self.__rental_price_per_day=rental_price_per_day #making this variable private 
 
     def displayInfo(self):
         print(f"this car of Brand {self.brand} with model of {self.model} at year {self.year} and of {self.rental_price_per_day}")
@@ -19,7 +19,7 @@ class Car(Vichelle):
         super().__init__(brand, model, year, rental_price_per_day)
         self.seating_capacity=seating_capacity
     #declaring an overriding method 
-    def displayInfo(self):
-        print(f"this car of Brand {self.brand} with model of {self.model} at year {self.year} and of {self.rental_price_per_day}")
+    def displayInfo(self,engine_capacity):
+        print(f"this car of Brand {self.brand} with model of {self.model} at year {self.year} and of {self.rental_price_per_day} with engine_capacity of {engine_capacity}")
 
 

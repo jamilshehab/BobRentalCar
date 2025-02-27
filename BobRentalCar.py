@@ -32,7 +32,7 @@ class Car(Vichelle):
     def calculate_rental_cost(self,days):
         i=0
         rental_cost=0
-        while i<=days:
+        while i<days:
            rental_cost+=50
            i+=1
         print(f"Rental cost for {self.brand} {self.model} for {days} days : {rental_cost} $")
@@ -49,7 +49,7 @@ class Bike(Vichelle):
     def calculate_rental_cost(self,days):
         i=0
         rental_cost=0
-        while i<=days:
+        while i<days:
            rental_cost+=30
            i+=1
         print(f"Rental cost for {self.brand} {self.model} for {days} days : {rental_cost} $")

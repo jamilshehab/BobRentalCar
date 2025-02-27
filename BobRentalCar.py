@@ -6,7 +6,6 @@ class Vichelle:
         self.year=year
         self.__rental_price_per_day=rental_price_per_day #making this variable private 
 
-
     def get_rental_price_per_day(self):
         return self.__rental_price_per_day
 
@@ -19,8 +18,6 @@ class Vichelle:
    
 class Car(Vichelle):
 
-    
-    
     def __init__(self, brand, model, year, rental_price_per_day,seating_capacity):
         super().__init__(brand, model, year, rental_price_per_day)
         self.seating_capacity=seating_capacity

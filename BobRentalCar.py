@@ -6,14 +6,14 @@ class Vichelle:
         self.year=year
         self.__rental_price_per_day=rental_price_per_day #making this variable private 
     
-    def get_price(self):
+    def get_rental_price_per_day(self):
         return self.__rental_price_per_day
-        
-    def set_price(self,value):
+
+    def set_rental_price_per_day(self,value):
         self.__rental_price_per_day=value
 
     def displayInfo(self):
-        print(f"this car of Brand {self.brand} with model of {self.model} at year {self.year} and a price of {self.get_price()}")
+        print(f"this car of Brand {self.brand} with model of {self.model} at year {self.year} and a price of {self.get_rental_price_per_day()}")
     
    
 class Car(Vichelle):
@@ -26,8 +26,9 @@ class Car(Vichelle):
         self.seating_capacity=seating_capacity
     #declaring an overriding method 
     def displayInfo(self,engine_capacity):
-        print(f"this car of Brand {self.brand} with model of {self.model} at year {self.year} and a price of {self.get_price()} with engine_capacity of {engine_capacity}")
+        print(f"this car of Brand {self.brand} with model of {self.model} at year {self.year} and a price of {self.get_rental_price_per_day()} with engine_capacity of {engine_capacity}")
 
+class Bike(Car):
 
-bmw=Car("BMW","New","2023",3000,4)
-bmw.displayInfo(engine_capacity=3300)
+bmw=Car("Toyota Corolla",2020,5,50,5)
+ 

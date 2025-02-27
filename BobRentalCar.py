@@ -37,7 +37,7 @@ class Bike(Vichelle):
         print(f"this car of Brand {self.brand} with model of {self.model} at year {self.year} and a price of {self.get_rental_price_per_day()} with a {engine_capacity} cc") 
     
 
-bmw=Car("Toyota","Corolla",2020,50)
-bmw.displayInfo(seating_capacity=5);
+toyota=Car("Toyota","Corolla",2020,50)
+yamaha=Bike("Yamaha","R1",30)
 
  

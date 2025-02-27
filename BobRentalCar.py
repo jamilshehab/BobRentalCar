@@ -21,14 +21,13 @@ class Car(Vichelle):
     def calculate_rental_cars(self,days):
         return self.rental_price_per_day + days
     
-    def __init__(self, brand, model, year, rental_price_per_day,seating_capacity):
+    def __init__(self, brand, model, year, rental_price_per_day):
         super().__init__(brand, model, year, rental_price_per_day)
-        self.seating_capacity=seating_capacity
     #declaring an overriding method 
-    def displayInfo(self,engine_capacity):
-        print(f"this car of Brand {self.brand} with model of {self.model} at year {self.year} and a price of {self.get_rental_price_per_day()} with engine_capacity of {engine_capacity}")
+    def displayInfo(self):
+        print(f"this car of Brand {self.brand} with model of {self.model} at year {self.year} and a price of {self.get_rental_price_per_day()} $")
 
-class Bike(Car):
-
-bmw=Car("Toyota Corolla",2020,5,50,5)
+ 
+bmw=Car("Toyota Corolla",5,2020,50)
+bmw.displayInfo();
  

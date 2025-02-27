@@ -40,4 +40,9 @@ class Bike(Vichelle):
 toyota=Car("Toyota","Corolla",2020,50)
 yamaha=Bike("Yamaha","R1",30)
 
+#creating a function 
+def show_vicheles_info(vichelle):
+    return vichelle
  
+show_vicheles_info(toyota.displayInfo(seating_capacity=5))
+show_vicheles_info(yamaha.displayInfo(engine_capacity=998))

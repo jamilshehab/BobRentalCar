@@ -30,11 +30,12 @@ class Car(Vichelle):
         print(f"this car of Brand {self.brand} with model of {self.model} at year {self.year} and a price of {self.get_rental_price_per_day()} with a {self.seating_capacity} seat") 
    
     def calculate_rental_cost(self,days):
-        user=int(input("Enter How Many Days : "))
+        # user=int(input("Enter How Many Days : "))
         rental_cost=0
-        while days <=user:
+        while days:
            rental_cost+=50
         print(f"Rental cost for {self.brand} {self.model} for {days} days")
+
 class Bike(Vichelle):
 
     def __init__(self,brand,model,year,rental_price_per_day,engine_capacity): 
@@ -44,6 +45,12 @@ class Bike(Vichelle):
     def displayInfo(self):
         print(f"this car of Brand {self.brand} with model of {self.model} at year {self.year} and a price of {self.get_rental_price_per_day()} with a {self.engine_capacity} cc") 
     
+    def calculate_rental_cost(self,days):
+        # user=int(input("Enter How Many Days : "))
+        rental_cost=0
+        while days:
+           rental_cost+=30
+        print(f"Rental cost for {self.brand} {self.model} for {days} days")
 
 toyota=Car("Toyota","Corolla",5,2020,50)
 yamaha=Bike("Yamaha","R1",2019,30,998)

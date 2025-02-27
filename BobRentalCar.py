@@ -19,8 +19,7 @@ class Vichelle:
    
 class Car(Vichelle):
 
-    def calculate_rental_cars(self,days):
-        return self.rental_price_per_day + days
+    
     
     def __init__(self, brand, model, year, rental_price_per_day,seating_capacity):
         super().__init__(brand, model, year, rental_price_per_day)
@@ -66,3 +65,7 @@ show_vicheles_info(toyota.displayInfo())
 show_vicheles_info(yamaha.displayInfo())
 show_vicheles_info(toyota.calculate_rental_cost(3))
 show_vicheles_info(yamaha.calculate_rental_cost(5))
+show_vicheles_info(toyota.set_rental_price_per_day(55))
+result=f"The Updated Rental Price of {toyota.brand} is {show_vicheles_info(toyota.get_rental_price_per_day())}$/day "
+
+print(result)

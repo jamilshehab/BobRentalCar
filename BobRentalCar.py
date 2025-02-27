@@ -26,6 +26,7 @@ class Car(Vichelle):
         super().__init__(brand, model, year, rental_price_per_day)
         self.seating_capacity=seating_capacity
 
+     
     def displayInfo(self):
         print(f"this car of Brand {self.brand} with model of {self.model} at year {self.year} and a price of {self.get_rental_price_per_day()} with a {self.seating_capacity} seat") 
    
@@ -44,7 +45,7 @@ class Bike(Vichelle):
         self.engine_capacity=engine_capacity
 
     def displayInfo(self):
-        print(f"this car of Brand {self.brand} with model of {self.model} at year {self.year} and a price of {self.get_rental_price_per_day()} with a {self.engine_capacity} cc") 
+        print(f"this car of Brand {self.brand} with model of {self.model} at year {self.year} and a price of {self.get_rental_price_per_day()} $ and a  {self.engine_capacity} cc") 
     
     def calculate_rental_cost(self,days):
         i=0
@@ -54,7 +55,7 @@ class Bike(Vichelle):
            i+=1
         print(f"Rental cost for {self.brand} {self.model} for {days} days : {rental_cost} $")
 
-toyota=Car("Toyota","Corolla",5,2020,50)
+toyota=Car("Toyota","Corolla",2020,50,5)
 yamaha=Bike("Yamaha","R1",2019,30,998)
 
 #creating a function 
@@ -64,3 +65,4 @@ def show_vicheles_info(vichelle):
 show_vicheles_info(toyota.displayInfo())
 show_vicheles_info(yamaha.displayInfo())
 show_vicheles_info(toyota.calculate_rental_cost(3))
+show_vicheles_info(yamaha.calculate_rental_cost(5))

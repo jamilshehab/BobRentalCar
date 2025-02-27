@@ -23,11 +23,12 @@ class Car(Vichelle):
     
     def __init__(self, brand, model, year, rental_price_per_day):
         super().__init__(brand, model, year, rental_price_per_day)
-    #declaring an overriding method 
-    def displayInfo(self):
-        print(f"this car of Brand {self.brand} with model of {self.model} at year {self.year} and a price of {self.get_rental_price_per_day()} $")
-
- 
+     
+    
+class Bike(Vichelle):
+    def __init__(self,brand,model,year,rental_price_per_day): 
+        super().__init__(brand,model,)
 bmw=Car("Toyota Corolla",5,2020,50)
 bmw.displayInfo();
+
  

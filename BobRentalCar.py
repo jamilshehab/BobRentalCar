@@ -24,7 +24,7 @@ class Car(Vichelle):
 
      
     def displayInfo(self):
-        print(f"this car of Brand {self.brand} with model of {self.model} at year {self.year} and a price of {self.get_rental_price_per_day()} with a {self.seating_capacity} seat") 
+        print(f"this car of Brand {self.brand} with model of {self.model} at year {self.year} and a price of {self.get_rental_price_per_day()} $ /day with a {self.seating_capacity} seat") 
    
     def calculate_rental_cost(self,days):
         i=0
@@ -41,7 +41,7 @@ class Bike(Vichelle):
         self.engine_capacity=engine_capacity
 
     def displayInfo(self):
-        print(f"this car of Brand {self.brand} with model of {self.model} at year {self.year} and a price of {self.get_rental_price_per_day()} $ and a  {self.engine_capacity} cc") 
+        print(f"this car of Brand {self.brand} with model of {self.model} at year {self.year} and a price of {self.get_rental_price_per_day()} $ /day and a  {self.engine_capacity} cc of Engine Capacity") 
     
     def calculate_rental_cost(self,days):
         i=0
@@ -62,6 +62,7 @@ show_vicheles_info(toyota.displayInfo())
 show_vicheles_info(yamaha.displayInfo())
 show_vicheles_info(toyota.calculate_rental_cost(3))
 show_vicheles_info(yamaha.calculate_rental_cost(5))
+#updating rental price using setter method
 show_vicheles_info(toyota.set_rental_price_per_day(55))
 result=f"The Updated Rental Price of {toyota.brand} is {show_vicheles_info(toyota.get_rental_price_per_day())}$/day "
 
